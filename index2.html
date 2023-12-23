@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cheerful Website</title>
+  <style>
+
+body {
+  
+  background-image: url('https://wallpapers.com/images/hd/spiderman-in-the-corner-hr6k8abdba0fbnv6.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.coolFont {
+  font-family: 'Courier New', Courier, monospace; /* You can change this to any font you like */
+  font-size: 4em;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html"><img src="logohome.png" alt="YO" width="50" height="50"></a></li>
+      <li><a href="index2.html"><img src="logo1.png"  width="50" height="50" alt="Home"></a></li>
+      <li><a href="about.html"><img src="logo2.png" alt="About" width="50" height="50"></a></li>
+      <li><a href="contact.html"><img src="logo3.png"   width="60" height="80" alt="Contact"></a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2 id="greeting" class="coolFont" onclick="changeText()">Hi Kentu Pentu</h2>
+    <p> </p>
+    <div></div>
+  </main>
+  
+  <script>
+    var names = ["Hi Kentu Pentu", "Hi Kenny Boy", "Angry, Kunnu ?", "Shonu boy<3", "Hi Ken ;)", "SPIDEY SADDY BOY", "Khatam", "Kyu", "Nahi", "Ho", "Raha", "cuz", "my love has no ends",];
+    var index = 0;
+
+    function changeText() {
+      index = (index + 1) % names.length;
+      document.getElementById("greeting").innerHTML = names[index];
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
